@@ -14,7 +14,7 @@ int main(int argc, char **argv, char **env)
 	while (1)
 	{
 		errno = 0;
-		line = read_line();
+		line = _getline();
 		if (line == NULL && errno == 0)
 			return (0);
 		if (line)

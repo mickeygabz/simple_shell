@@ -22,6 +22,11 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 char *_strcat(char *dest, char *src);
 int _putchar(char c);
+char *_getline(void);
+char *read_input(void);
+int find_newline(char *buffer, int size);
+char *copy_line(char *buffer, int len, char *line);
+void shift_buffer(char *buffer, int size, int pos);
 
 char *get_path(char **env);
 int value_path(char **arg, char **env);
